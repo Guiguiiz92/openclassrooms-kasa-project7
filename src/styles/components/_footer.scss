@@ -1,0 +1,37 @@
+footer {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+	padding: 40px 0px;
+
+	img {
+		width: 100px;
+	}
+
+	#texteFooter {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 142.6%;
+		padding: 2%;
+	}
+	@media (min-width: 1200px) {
+		height: 100px;
+		padding: 40px 0px;
+
+		img {
+			width: 120px;
+			margin-top: 20px;
+		}
+
+		#texteFooter {
+			font-size: 24px;
+		}
+	}
+}

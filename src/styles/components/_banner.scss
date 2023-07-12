@@ -1,0 +1,54 @@
+#banner {
+	width: calc(100% - 30px);
+	margin: 15px;
+	height: 110px;
+	display: flex;
+	align-items: center;
+	border-radius: 25px;
+	background-size: 180%;
+	background-position: center;
+	&.bannerAbout {
+		height: 223px;
+
+		@media (min-width: 760px) {
+			height: 110px;
+		}
+		@media (min-width: 1300px) {
+			height: 223px;
+		}
+	}
+}
+@media (min-width: 760px) {
+	#banner {
+		background-size: 100%;
+		justify-content: center;
+		width: calc(100% - 100px);
+		margin: 20px 50px;
+	}
+}
+@media (min-width: 1000px) {
+	#banner {
+		height: 223px;
+	}
+}
+
+#bannerTexte {
+	color: white;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: left;
+	padding-left: 15px;
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 760px) {
+		display: flex;
+		flex-direction: row;
+		gap: 5px;
+	}
+	@media (min-width: 1300px) {
+		font-size: 44px;
+	}
+}

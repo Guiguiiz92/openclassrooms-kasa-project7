@@ -1,0 +1,40 @@
+#error404-wrapper {
+	display: flex;
+	flex-direction: column;
+	font-family: Montserrat;
+	align-items: center;
+	justify-content: center;
+	margin: 100px 50px;
+	color: #ff6060;
+	&__title {
+		font-size: 96px;
+		font-weight: 700;
+		line-height: 137px;
+		margin-bottom: 10px;
+		@media (min-width: 1300px) {
+			font-size: 288px;
+			margin-top: 150px;
+			margin-bottom: 150px;
+		}
+	}
+	&__txt {
+		text-align: center;
+		font-weight: 500;
+		font-size: 18px;
+		margin-bottom: 80px;
+		line-height: 25.67px;
+		@media (min-width: 1300px) {
+			font-size: 36px;
+			margin-bottom: 150px;
+		}
+	}
+	&__txt-back {
+		font-size: 14px;
+		&:hover {
+			text-decoration: underline;
+		}
+		@media (min-width: 1300px) {
+			font-size: 18px;
+		}
+	}
+}

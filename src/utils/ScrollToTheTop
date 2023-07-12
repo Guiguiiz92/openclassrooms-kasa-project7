@@ -1,0 +1,11 @@
+import { useLocation } from "react-router-dom"
+
+
+const ScrollToTheTop = () => {
+    const location = uselocation();
+    console.log(location)
+    const { pathname } = useLocation();
+    return null
+}
+
+export default ScrollToTheTop

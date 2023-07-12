@@ -1,0 +1,53 @@
+.carousel {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.active {
+	width: 100%;
+	height: 255px;
+	border-radius: 25px;
+	@media (min-width: 768px) {
+		height: 415px;
+	}
+}
+.slide {
+	background-position: center;
+	background-size: cover;
+}
+.previous,
+.next,
+.counter {
+	position: absolute;
+	color: white;
+	cursor: pointer;
+	user-select: none;
+}
+.previous {
+	left: 15px;
+	font-size: 20px;
+	@media (min-width: 768px) {
+		font-size: 50px;
+		left: 30px;
+	}
+}
+.next {
+	right: 15px;
+	font-size: 20px;
+	@media (min-width: 768px) {
+		font-size: 50px;
+		right: 30px;
+	}
+}
+.counter {
+	bottom: 20px;
+	color: transparent;
+	@media (min-width: 768px) {
+		font-size: 18px;
+		bottom: 40px;
+		color: white;
+	}
+}
