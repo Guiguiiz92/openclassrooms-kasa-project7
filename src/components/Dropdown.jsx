@@ -18,9 +18,7 @@ const Dropdown = (props) => {
 				)}
 			</div>
 
-			{showtexte && (
-				<div className="texte">{displayLines(props.texte)}</div>
-			)}
+			{showtexte && <p className="texte">{displayLines(props.texte)}</p>}
 		</div>
 	);
 };

@@ -7,7 +7,7 @@ const Tlocation = (props) => {
 			}}
 			onClick={props.handleClick}
 		>
-			<div id="titlelocation">{props.title}</div>
+			<p id="titlelocation">{props.title}</p>
 		</div>
 	);
 };

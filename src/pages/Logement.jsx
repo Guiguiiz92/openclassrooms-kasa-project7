@@ -13,10 +13,10 @@ const Logement = () => {
 				<Carousel pictures={logement.pictures} />
 				<div className="logement-txt">
 					<div className="logement-txt-left">
-						<div className="logement-title">{logement.title}</div>
-						<div className="logement-location">
+						<h1 className="logement-title">{logement.title}</h1>
+						<h2 className="logement-location">
 							{logement.location}
-						</div>
+						</h2>
 						<div className="logement-liste-tag">
 							{logement.tags &&
 								logement.tags.map((tag, index) => {
@@ -32,7 +32,7 @@ const Logement = () => {
 						</div>
 					</div>
 					<div className="logement-txt-right">
-						<div className="logement-owner">
+						<span className="logement-owner">
 							{splitName(logement.host.name)}
 							<div>
 								<img
@@ -40,7 +40,7 @@ const Logement = () => {
 									alt="Face-owner"
 								/>
 							</div>
-						</div>
+						</span>
 						<div className="logement-rating">
 							<Rating rating={logement.rating} />
 						</div>
