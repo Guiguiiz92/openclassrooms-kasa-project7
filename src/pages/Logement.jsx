@@ -34,12 +34,7 @@ const Logement = () => {
 					<div className="logement-txt-right">
 						<span className="logement-owner">
 							{splitName(logement.host.name)}
-							<div>
-								<img
-									src={logement.host.picture}
-									alt="Face-owner"
-								/>
-							</div>
+							<img src={logement.host.picture} alt="Face-owner" />
 						</span>
 						<div className="logement-rating">
 							<Rating rating={logement.rating} />

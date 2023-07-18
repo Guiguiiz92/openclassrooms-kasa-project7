@@ -14,14 +14,14 @@ const Header = () => {
 				<ul>
 					<li
 						className={
-							location.pathname === '/home' ? 'nav-active' : ''
+							location.pathname === '/home' && 'nav-active'
 						}
 					>
 						<Link to="/home">Accueil</Link>
 					</li>
 					<li
 						className={
-							location.pathname === '/about' ? 'nav-active' : ''
+							location.pathname === '/about' && 'nav-active'
 						}
 					>
 						<Link to="/about">A Propos</Link>
