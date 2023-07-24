@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 const image = require('../images/kasa.png');
+
 const Header = () => {
 	const location = useLocation();
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Dropdown = (props) => {
+const Dropdown = ({ title, texte }) => {
 	const [showtexte, setShowtexte] = useState(false);
 
 	function updateShowtexte() {
@@ -10,7 +10,7 @@ const Dropdown = (props) => {
 	return (
 		<div className="dropdown">
 			<div className="titre" onClick={updateShowtexte}>
-				<span>{props.title}</span>
+				<span>{title}</span>
 				{showtexte ? (
 					<i className="fa-solid fa-chevron-up chevron"></i>
 				) : (
@@ -18,7 +18,7 @@ const Dropdown = (props) => {
 				)}
 			</div>
 
-			{showtexte && <p className="texte">{displayLines(props.texte)}</p>}
+			{showtexte && <p className="texte">{displayLines(texte)}</p>}
 		</div>
 	);
 };

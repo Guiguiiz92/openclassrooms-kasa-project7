@@ -1,5 +1,5 @@
-const Rating = (props) => {
-	const nbRedStar = parseInt(props.rating);
+const Rating = ({ rating }) => {
+	const nbRedStar = parseInt(rating);
 
 	return (
 		<div>

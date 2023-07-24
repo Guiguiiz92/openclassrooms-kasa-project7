@@ -1,13 +1,13 @@
-const Tlocation = (props) => {
+const Tlocation = ({ cover, handleClick, title }) => {
 	return (
 		<div
 			id="tlocation"
 			style={{
-				backgroundImage: `linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6) ),url(${props.cover})`,
+				backgroundImage: `linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.6) ),url(${cover})`,
 			}}
-			onClick={props.handleClick}
+			onClick={handleClick}
 		>
-			<p id="titlelocation">{props.title}</p>
+			<p id="titlelocation">{title}</p>
 		</div>
 	);
 };

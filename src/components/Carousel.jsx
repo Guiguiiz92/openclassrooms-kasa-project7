@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-const Carousel = (props) => {
+const Carousel = ({ pictures }) => {
 	const [current, setCurrent] = useState(0);
-	const length = props.pictures.length;
+	const length = pictures.length;
 	const nextSlide = () => {
 		setCurrent(current === length - 1 ? 0 : current + 1);
 	};
@@ -19,8 +19,8 @@ const Carousel = (props) => {
 			<div className="counter">
 				{current + 1}/{length}
 			</div>
-			{props.pictures &&
-				props.pictures.map((picture, index) => {
+			{pictures &&
+				pictures.map((picture, index) => {
 					return (
 						<div
 							className={

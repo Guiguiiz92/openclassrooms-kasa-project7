@@ -1,28 +1,15 @@
-const Banner = (props) => {
+const Banner = ({ className, img, txt }) => {
 	return (
-		// <div
-		// 	id="banner"
-		// 	className={props.className}
-		// 	style={{
-		// 		backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3) ), url(${props.img})`,
-		// 	}}
-		// >
-		<div className="banner">
-			<img
-				id="bannerImg"
-				className={props.className}
-				src={props.img}
-				alt="toto"
-			/>
-			<div className="filigrane" />
+		<div className={'banner ' + className}>
+			<img id="bannerImg" src={img} alt="toto" />
+			<div className="filigrane"></div>
 			<div id="bannerTexte">
-				{props.txt &&
-					props.txt.map((value, index) => {
+				{txt &&
+					txt.map((value, index) => {
 						return <span key={index}>{value}</span>;
 					})}
 			</div>
 		</div>
-		// </div>
 	);
 };
 
